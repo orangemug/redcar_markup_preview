@@ -1,8 +1,8 @@
 Plugin.define do
-  name    "markdown"
+  name    "markup_viewer"
   version "0.1b"
-  file    "lib", "markdown"
-  object  "Redcar::Markdown"
-  dependencies "redcar",    ">0",  
-               "HTML View", ">0"              
+  file    "lib", "markup_viewer"
+  object  "Redcar::MarkupViewer"
+  dependencies "redcar",    ">0",
+               "HTML View", ">0"
 end
