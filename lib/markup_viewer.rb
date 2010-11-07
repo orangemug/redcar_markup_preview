@@ -104,6 +104,7 @@ module Redcar
               # when :org:      Orgmode::Parser.new(File.read(file)).to_html
               else
                 Application::Dialog.message_box("Unsupported file type.")
+                return
             end
             
             controller = MarkupViewerView.new(file, generated_html)
