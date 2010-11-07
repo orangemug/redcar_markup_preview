@@ -26,28 +26,15 @@ module Redcar
       Menu::Builder.build do
         sub_menu "Plugins" do
           sub_menu "Markdown " do
-            item "Render current file", Render
-            item "Edit plugin", Edit
+            item "Render current file", Render            
           end
         end
       end
     end
 
-
     class Render < Redcar::Command
       def execute
         MarkdownTab.new(win)
-      end
-    end
-
-    class Edit < Redcar::Command
-      def execute        
-        Project::Manager.open_project_for_path(File.join(Redcar.user_dir, "plugins", "markdown"))
-        tab  = Redcar.app.focussed_window.new_tab(Redcar::EditTab)
-        mirror = Project::FileMirror.new(File.join(Redcar.user_dir, "plugins", "markdown", "lib", "markdown.rb"))
-        tab.edit_view.document.mirror = mirror
-        tab.edit_view.reset_undo
-        tab.focus
       end
     end
 
