@@ -9,7 +9,7 @@
 	url = git://github.com/jmcnevin/rubypants.git
 [submodule "vendor/org-ruby"]
 	path = vendor/org-ruby
-	url = git://github.com/jmcnevin/rubypants.git
+	url = git://github.com/bdewey/org-ruby.git
 [submodule "vendor/creole"]
 	path = vendor/creole
 	url = git://github.com/kib2/Ruby-Creole.git
