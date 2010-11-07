@@ -2,7 +2,9 @@
 Redcar plugin to render files with Markdown, so I (and others) don't have to keep checking in incorrect versions of the README.md on github!
 
  * cd ~/.redcar/plugins
- * git clone git://github.com/orangemug/redcar_markup_viewer.git
+ * git clone git@github.com:orangemug/redcar_markup-viewer.git
+ * git submodule init
+ * git submodule update
 
 Supported formats:
 
