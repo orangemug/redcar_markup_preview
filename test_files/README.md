@@ -1,9 +1,9 @@
-h1. Markdown
+# Markdown
 
 Mini test file for the markdown generation.
 
 
-h2. Notes
+## Notes
 
 Some code
 
