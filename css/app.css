@@ -1,0 +1,158 @@
+/* v1.0 | 20080212 */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+}
+
+/* remember to highlight inserts somehow! */
+ins {
+	text-decoration: none;
+}
+del {
+	text-decoration: line-through;
+}
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* Definitions */
+@font-face {
+	font-family: 'PermanentMarkerRegular';
+	src: url('../font/PermanentMarker-webfont.eot');
+	src: local('☺'), url('../font/PermanentMarker-webfont.woff') format('woff'), url('../font/PermanentMarker-webfont.ttf') format('truetype'), url('../font/PermanentMarker-webfont.svg#webfontgsbU6X9t') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+/* Main CSS */
+body {
+  background-color: #4E4E4E;
+  color: #FF8000;
+  text-align: center;
+  font-family: arial;
+}
+
+.main {
+  width: 900px; 
+  text-align: left; 
+  display: inline-block;
+  margin-top: 15px;    
+}
+
+.code {
+  border-style: solid;
+  border-width: 1px;
+  border-color: #3A3A3A;
+  background-color: #696969;
+  padding: 5px;
+  color: #1B1B1B;
+  font-weight: 600;
+}
+
+
+.screenshot img {
+  margin: 10px;
+  height: 280px;    
+  float: left;
+  display:block;
+  width: 280px;    
+}
+
+.sep_end {
+  width: 20px;
+  margin: 0px;
+  float: left;
+  height: 75px;
+}
+
+.sep {
+  margin: 0px;
+  width: 40px;    
+  text-align: center;
+  float: left;
+}
+
+header {
+  font: 50px/58px 'PermanentMarkerRegular', Arial, sans-serif;letter-spacing: 0;
+}
+
+.title {
+  float: left;
+  margin: 0px;
+  width: 260px;
+  height: 75px;
+  display: block;
+  text-align: center;
+}
+
+
+h1 {
+  font: 30px/38px 'PermanentMarkerRegular', Arial, sans-serif;letter-spacing: 0;
+}
+
+#instructions {
+  clear: both;
+  margin: 20px;
+  margin-bottom: 40px;
+}
+
+
+h1 {
+  margin-top: 15px;
+  margin-bottom: 8px;
+}
+
+h1.fontface {
+  font: 60px/68px 'PermanentMarkerRegular', Arial, sans-serif;letter-spacing: 0;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.clear {
+  clear: both;
+}
+
+a {
+  color: #FEAD5C;
+}

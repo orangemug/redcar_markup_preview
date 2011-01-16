@@ -1,0 +1,75 @@
+<html>
+<head>
+  <title>redcar_markup_viewer</title>
+  <link rel="stylesheet" media="all" href="css/app.css"/> 
+</head>
+<body>
+  <div class="main">    
+    <header>
+      <div class="sep_end"></div>
+      <div class="title"><div>redcar</div></div>
+      <div class="sep">&#62;</div>
+      <div class="title">markup</div>
+      <div class="sep">&#62;</div>
+      <div class="title">viewer</div>
+      <div class="sep_end"></div>
+    </header>
+    
+    <div class="screenshot">
+      <img src="images/readme_1.png">
+      <img src="images/readme_2.png">
+      <img src="images/readme_3.png">
+      <div class="clear"></div>
+    </div>
+    
+    <div id="instructions">
+      <!-- WHAT IS IT -->
+      <h1>What is it?</h1>
+      <p>
+        It's a <a target="_blank" href="http://redcareditor.com">Redcar Editor</a> plugin to render github supported markup, so I (and others) don't have to keep checking in incorrect versions of the README on github!
+      </p>
+
+      <!-- INSTALL -->
+      <h1>Install</h1>
+      <p>
+        Just follow the simple steps below (steps written against v0.9.2):
+      </p>
+      <pre class="code">
+cd ~/.redcar/plugins
+git clone https://github.com/orangemug/redcar_markup_viewer.git
+git submodule init
+git submodule update
+</pre>
+
+      <!-- USAGE -->
+      <h1>Usage</h1>      
+      <p>
+        Open you README.format in the editor and select
+        <pre class="code">Plugins -> Markup Viewer -> Generate from filename</pre>
+      </p>
+      <p>
+        Or hit
+        <pre class="code">ctrl + shift + m</pre>
+      </p>
+      <p>
+        The supported formats are currently <i>Markdown</i> and <i>Textile</i>
+      </p>
+        
+      <!-- MISC -->      
+      <h1>Misc</h1>
+      <ul>
+        <li>
+          My blog is at <a href="http://orangemug.co.uk">orangemug.co.uk</a>
+        </li>
+        <li>
+          Redcar is available <a target="_blank" href="http://redcareditor.com">here</a>
+        </li>
+        <li>
+          Awesome font used is available <a target="_blank" href="http://bit.ly/eI4bl4">here</a>
+        </li>
+      </ul>        
+    </div>    
+  </div>
+  <a href="https://github.com/orangemug/redcar_markup_viewer"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://assets0.github.com/img/30f550e0d38ceb6ef5b81500c64d970b7fb0f028?repo=&url=http%3A%2F%2Fs3.amazonaws.com%2Fgithub%2Fribbons%2Fforkme_right_orange_ff7600.png&path=" alt="Fork me on GitHub"></a>
+</body>
+</html>
