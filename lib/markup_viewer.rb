@@ -1,14 +1,13 @@
 # Add all gems from vendor to the load path.
-Dir.glob(File.dirname(__FILE__) + "/../vendor/*").each do |path|
-  gem_name = File.basename(path.gsub(/-[\d\.]+$/, ''))
-  puts "loading %s" % gem_name
-  $LOAD_PATH << path + "/lib/"
-end
+$:.unshift(File.dirname(__FILE__) + '/../vendor/creole/')
+$:.unshift(File.dirname(__FILE__) + '/../vendor/maruku/lib')
+$:.unshift(File.dirname(__FILE__) + '/../vendor/org-ruby/lib')
+$:.unshift(File.dirname(__FILE__) + '/../vendor/redcloth/lib')
+$:.unshift(File.dirname(__FILE__) + '/../vendor/rubypants/')
 
 # Libs
 require 'maruku'
 require 'org-ruby'
-require 'redcloth'
 
 module Redcar
 
@@ -31,7 +30,7 @@ module Redcar
           sub_menu "Markup Viewer " do
             item "Generate from filename", Render
             item "Generate MarkupViewer", RenderMarkupViewer
-            item "Generate Textile", RenderTextile
+            #item "Generate Textile", RenderTextile
           end
         end
       end

@@ -7,4 +7,3 @@ See [here](http://orangemug.github.com/redcar_markup_viewer)
 ##Supported formats:
 
  * [Markdown](http://daringfireball.net/projects/markdown/)
- * [Textile](http://en.wikipedia.org/wiki/Textile_%28markup_language%29)
