@@ -4,12 +4,3 @@
 [submodule "vendor/redcloth"]
 	path = vendor/redcloth
 	url = git://github.com/jgarber/redcloth.git
-[submodule "vendor/rubypants"]
-	path = vendor/rubypants
-	url = git://github.com/jmcnevin/rubypants.git
-[submodule "vendor/org-ruby"]
-	path = vendor/org-ruby
-	url = git://github.com/bdewey/org-ruby.git
-[submodule "vendor/creole"]
-	path = vendor/creole
-	url = git://github.com/kib2/Ruby-Creole.git
