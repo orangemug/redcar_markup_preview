@@ -2,9 +2,9 @@ h1. Textile
 
 Mini test file for the textile generation.
 
-
 h2. Notes
 
 Some code
 
-<pre><code>gem install ruby-screen</pre></code>
+<pre><code>gem install ruby-screen</code></pre>
+bc. gem install ruby-screen # code the textile way
