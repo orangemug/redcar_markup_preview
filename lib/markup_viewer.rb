@@ -7,7 +7,8 @@ $:.unshift(File.dirname(__FILE__) + '/../vendor/rubypants/')
 
 # Libs
 require 'maruku'
-require 'org-ruby'
+require 'org-ruby' # currently not used, but fails to load the plugin when not required
+require 'redcloth'
 
 module Redcar
 
@@ -30,7 +31,7 @@ module Redcar
           sub_menu "Markup Viewer " do
             item "Generate from filename", Render
             item "Generate MarkupViewer", RenderMarkupViewer
-            #item "Generate Textile", RenderTextile
+            item "Generate Textile", RenderTextile
           end
         end
       end
@@ -60,8 +61,8 @@ module Redcar
       class InvalidType < StandardError; end
       include HtmlController
 
-      def initialize(file, html)
-        @title          = "[markdown] %s" % file        
+      def initialize(file, html, type = "markdown")
+        @title          = "[%s] %s" % [type, file]
         @generated_html = html
       end
       
@@ -106,7 +107,7 @@ module Redcar
                 return
             end
             
-            controller = MarkupViewerView.new(file, generated_html)
+            controller = MarkupViewerView.new(file, generated_html, type.to_s)
             tab = win.new_tab(HtmlTab)
             tab.html_view.controller = controller
             tab.focus
