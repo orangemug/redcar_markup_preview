@@ -1,8 +1,12 @@
-# redcar_markup_viewer
-Redcar plugin to render files with Markdown, so I (and others) don't have to keep checking in incorrect versions of the README on github!
+# Redcar Markup Preview
+Redcar plugin to render files with Markdown or Textile (more markup formats coming soon!), so I (and others) don't have to keep checking in incorrect versions of the README on github!
 
 ## Usage
-See [here](http://orangemug.github.com/redcar_markup_viewer)
+
+1. Open a file with supported markup
+2. Press Ctrl+Shift+M
+3. Choose the markup language
+4. Press Enter and enjoy!
 
 ##Supported formats:
 
