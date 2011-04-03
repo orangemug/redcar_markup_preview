@@ -1,0 +1,8 @@
+= RDoc
+
+Mini test file for the rdoc generation.
+
+== Notes
+
+Some code
+  gem install ruby-screen

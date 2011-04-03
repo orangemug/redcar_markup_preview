@@ -7,6 +7,8 @@ module Redcar
           Redcar::MarkupPreview::MarkupPreview::RenderMarkupPreview.new(:textile).run
         when /markdown/i
           Redcar::MarkupPreview::MarkupPreview::RenderMarkupPreview.new(:markdown).run
+        when /rdoc/i
+          Redcar::MarkupPreview::MarkupPreview::RenderMarkupPreview.new(:rdoc).run
         end
       end
     end
