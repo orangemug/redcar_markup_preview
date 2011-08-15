@@ -1,6 +1,6 @@
 # Add all gems from vendor to the load path.
-$:.unshift(File.dirname(__FILE__) + '/../vendor/maruku/lib')
-$:.unshift(File.dirname(__FILE__) + '/../vendor/redcloth/gems/RedCloth-4.2.2-universal-java/lib')
+$:.unshift(File.join(Redcar.user_dir, 'plugins/redcar_markup_preview/vendor/maruku/lib'))
+$:.unshift(File.join(Redcar.user_dir, 'plugins/redcar_markup_preview/vendor/redcloth/gems/RedCloth-4.2.2-universal-java/lib'))
 
 require "maruku"
 require "redcloth"
