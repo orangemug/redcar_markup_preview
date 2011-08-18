@@ -3,6 +3,15 @@ Redcar plugin to render files with Markdown, Textile or RDoc (more markup format
 so I (and others) don't have to keep checking in incorrect versions of the README on github! See
 more [here](http://orangemug.github.com/redcar_markup_preview).
 
+## Installation
+
+    cd ~/.redcar/plugins
+    git clone git://github.com/orangemug/redcar_markup_preview.git
+    git submodule init
+    git submodule update
+  
+Then simply run redcar.
+
 ## Usage
 
 ### By choice:
